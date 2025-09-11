@@ -16,17 +16,29 @@
 <div class="form-box">
   <h2>Sign Up</h2>
   <form id="signupForm" novalidate>
+    <!--Full Name-->
   <input type="text" id="userName" placeholder="Full Name">
+  <small id="userNameError" class="error"></small>
+
+  <!--Email-->
   <input type="email" id="email" placeholder="Email">
+  <small id="emailError" class="error"></small>
+
+  <!--Password-->
   <input type="password" id="password" placeholder="Password">
+  <small id="passswordError" class="error"></small>
+
+  <!--confirmPassword-->
   <input type="password" id="confirmPassword" placeholder="Confirm Password">
+  <small id="confirmPassword" class="error"></small>
 
   <!-- Gender with Radio Buttons -->
-  <div class="gender">
+   <div class="gender">
     <label><input type="radio" name="gender" value="Male"> Male</label>
     <label><input type="radio" name="gender" value="Female"> Female</label>
     <label><input type="radio" name="gender" value="Other"> Other</label>
   </div>
+  <small id="genderError" class="error"></small>
 
   <!-- Terms and Conditions -->
   <div class="terms">
@@ -34,11 +46,16 @@
       <input type="checkbox" id="terms"> I agree to the Terms & Conditions
     </label>
   </div>
+  <small id="termsError" class="error"></small>
+
+  <!--Message-->
   <p id="message"></p>
+
+  <!--Submit Button-->
       <button type="submit">Submit</button>
       </form>
     </div>
   </div>
   <script src="script.js"></script>
 </body>
-</html> 
+</html>
